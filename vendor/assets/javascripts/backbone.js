@@ -384,7 +384,7 @@
         }
         if (!model.set(serverAttrs, options)) return false;
         if (success) {
-          success(model, resp);
+          success(model, resp, xhr);
         } else {
           model.trigger('sync', model, resp, options);
         }
